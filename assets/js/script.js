@@ -94,14 +94,6 @@ const filterFunc = function (selectedValue) {
       }
     }
 
-    // if (selectedValue === "all") {
-    //   filterItems[i].classList.add("active");
-    // } else if (selectedValue === filterItems[i].dataset.category) {
-    //   filterItems[i].classList.add("active");
-    // } else {
-    //   filterItems[i].classList.remove("active");
-    // }
-
   }
 
 }
@@ -187,22 +179,3 @@ function openPage(page){
   }
 
 }
-
-// var slideIndex = 0;
-// var slides = document.getElementsByClassName("mySlides");
-// var slidesWrapper = document.querySelector(".slides-wrapper");
-
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
-
-// function showDivs(n) {
-//   if (n >= slides.length) {slideIndex = 0}
-//   if (n < 0) {slideIndex = slides.length - 1}
-//   slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
-// }
-
-// // Initialize the first slide
-// showDivs(slideIndex);
-
-

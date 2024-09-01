@@ -454,7 +454,7 @@ button:hover {
 .home-page-card {
 	border-radius: 34.526px;
 	border: 1.2px solid #282828;
-	background: #1e1e1f;
+	/* background: #1e1e1f; */
 	width: fit-content;
 }
 
