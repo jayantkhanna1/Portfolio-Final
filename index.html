@@ -20,8 +20,9 @@
   <!--
     - custom css link
   -->
-
-  <link rel="stylesheet" href="./assets/css/tidy.css">
+  <link rel="preload" href="./assets/css/tidy.css" as="style">
+  <link rel="stylesheet" href="./assets/css/tidy.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="./assets/css/tidy.css"></noscript>
 
   <!--
     - google font link
@@ -1805,7 +1806,7 @@
   <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 
   <!--
     - ionicon link
