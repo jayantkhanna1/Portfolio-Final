@@ -302,6 +302,14 @@ main {
       overflow: hidden;
       transition: var(--transition-2)
 }
+.sidebar.active {
+      max-height: 405px;
+    }
+
+    .sidebar.active .sidebar-info_more {
+      opacity: 1;
+      visibility: visible;
+    }
 
 .sidebar-info {
       position: relative;
@@ -551,6 +559,15 @@ main {
 .modal-container::-webkit-scrollbar {
       display: none
 }
+.modal-container.active {
+      pointer-events: all;
+      visibility: visible;
+    }
+    .overlay.active {
+      opacity: 0.8;
+      visibility: visible;
+      pointer-events: all;
+    }
 
 .overlay {
       position: fixed;
@@ -579,7 +596,10 @@ main {
       transition: var(--transition-1);
       z-index: 2
 }
-
+.modal-container.active .testimonials-modal {
+      transform: scale(1);
+      opacity: 1;
+    }
 .modal-close-btn {
       position: absolute;
       top: 15px;
@@ -713,7 +733,14 @@ main {
       font-size: var(--fs-6);
       font-weight: var(--fw-300)
 }
-
+.filter-select.active .select-icon {
+      transform: rotate(0.5turn);
+    }
+    .filter-select.active+.select-list {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
 .select-list {
       background: var(--eerie-black-2);
       position: absolute;
@@ -1088,6 +1115,9 @@ textarea.form-input::-webkit-resizer {
             max-height: 180px;
             margin-bottom: 30px
       }
+      .sidebar.active {
+            max-height: 584px;
+          }
 
       .sidebar-info {
             gap: 25px
