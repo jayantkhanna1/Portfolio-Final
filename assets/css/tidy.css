@@ -1638,7 +1638,8 @@ textarea.form-input::-webkit-resizer {
       z-index: 1;
       min-width: min-content;
       width: 275px;
-      cursor: default
+      cursor: default;
+      height: 90px;  
 }
 
 .client_item::before {
@@ -1649,7 +1650,7 @@ textarea.form-input::-webkit-resizer {
       border-radius: inherit;
       z-index: -1;
       cursor: default;
-      width: 275px;
+      width: 100%;  
       min-width: min-content
 }
 
